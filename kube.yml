@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aspnet
+spec:
+  selector:
+    matchLabels:
+      run: aspnet
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: aspnet
+    spec:
+      containers:
+      - name: aspnet
+        image: mendelev/aspnet:v1.1
+        ports:
+        - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: aspnet
+  labels:
+    run: aspnet
+spec:
+  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 80
+    protocol: TCP
+    name: http
+  - port: 443
+    protocol: TCP
+    name: https
+  selector:
+    run: aspnet
