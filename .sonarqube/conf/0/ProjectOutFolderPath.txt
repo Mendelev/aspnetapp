@@ -1,0 +1,1 @@
+/home/neopath/dotnet-docker/samples/aspnetapp/.sonarqube/out/0

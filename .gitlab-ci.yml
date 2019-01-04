@@ -1,0 +1,33 @@
+stages:
+  - build
+  - static_analysis
+  - deploy_registry
+
+
+build:
+  stage: build
+  tags:
+    - geral
+  script:
+    - "dotnet build"
+
+sonarqube:
+  stage: static_analysis
+  tags:
+    - geral
+  script:
+    - echo -e "\n Análise estática do código. \n"
+    - "scanner/dotnet-sonarscanner begin /k:\"aspnetapp\" /d:sonar.host.url=http://localhost:9000 /d:sonar.login=7f067caee1da6e376bf38a4ba65db576ac21a42c"
+    #- "scanner/dotnet-sonarscanner begin /k:\"chave_teste\""  
+    - "dotnet build"
+    - "scanner/dotnet-sonarscanner end /d:sonar.login=7f067caee1da6e376bf38a4ba65db576ac21a42c"
+  allow_failure: false
+registry:
+  stage: deploy_registry
+  tags:
+    - geral
+  script:
+    - "docker login 172.28.60.148:4567 -u root -p Inovax123!"
+    - "docker build -t aspnetapp ."
+    - "docker push"
+

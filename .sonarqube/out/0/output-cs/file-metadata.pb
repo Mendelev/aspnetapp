@@ -1,0 +1,12 @@
+|
+x/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/Home/About.g.cshtml.cs~
+z/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/Home/Contact.g.cshtml.cs|
+x/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/Home/Index.g.cshtml.cs~
+z/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/Home/Privacy.g.cshtml.cs~
+z/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/Shared/Error.g.cshtml.csè
+ä/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/Shared/_CookieConsentPartial.g.cshtml.csÄ
+|/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/Shared/_Layout.g.cshtml.csì
+é/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/Shared/_ValidationScriptsPartial.g.cshtml.cs~
+z/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/_ViewImports.g.cshtml.cs|
+x/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/Razor/Views/_ViewStart.g.cshtml.cs~
+z/home/neopath/dotnet-docker/samples/aspnetapp/aspnetapp/obj/local/Debug/netcoreapp2.1/aspnetapp.RazorTargetAssemblyInfo.cs
